@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--
+Name: Devin Castillo
+Date: 10/4/2026
+Description: The trainer search page, where users can
+search for different trainers on the site.
+-->
+
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title>BetterGains - Trainer Search</title>
+</head>
+
+<body>
+    <!-- Header/nav section of the bar-->
+    <img src="images/bettergains_logo.png" alt="BetterGains Logo" height="40px">
+    <h1>Trainer Search</h1>
+        <a href="home.html">Home</a>
+        <a href="trainer_search.html">Trainer Search</a>
+        <p>This is where you can search for a personal trainer. You can search by name,
+            price, specialty, location, and more.</p>
+    <hr>
+    
+    <!-- List of all the trainers using a table
+     Includes pictures and information for all trainers-->
+    <h2>Trainers:</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/trainer1.jpg" alt="Trainer 1" height="200">
+                        <h3>Jessica Wilson</h3>
+                        <p>Specialty: Strength Training</p>
+                        <p>Location: New York, NY</p>
+                        <p>Price: $50/hour</p>
+                    </td>
+                    <td>
+                        <img src="images/trainer2.jpg" alt="Trainer 2" height="200">
+                        <h3>Michael Harris</h3>
+                        <p>Specialty: Hypertrophy</p>
+                        <p>Location: Columbus, OH</p>
+                        <p>Price: $40/hour</p>
+                    </td>
+                    <td>
+                        <img src="images/trainer3.jpg" alt="Trainer 3" height="200">
+                        <h3>Jake Thompson</h3>
+                        <p>Specialty: Mobility</p>
+                        <p>Location: Chicago, IL</p>
+                        <p>Price: $45/hour</p>
+                    </td>
+                    <td>
+                        <img src="images/trainer4.jpg" alt="Trainer 4" height="200">
+                        <h3>William Davis</h3>
+                        <p>Specialty: Nutrition</p>
+                        <p>Location: Boston, MA</p>
+                        <p>Price: $60/hour</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <hr>
+
+    <!-- user chooses a trainer in a form, uses text and radio buttons -->
+    <h2>Choose Trainer:</h2>
+        <form action="home.html">
+            <label for="user_name">Your Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+            <br>
+            <br>
+
+            <!-- User enters their goal so the personal trainer can know what they want to learn -->
+            <label for="goal">Your Goal:</label>
+            <input type="text" id="goal" name="goal" required>
+            <br>
+            <br>
+
+            <label>Choose a Trainer:</label>
+            <br>
+
+            <label><input type="radio" name="trainer" required> Jessica Wilson</label>
+            <br>
+            <label><input type="radio" name="trainer"> Michael Harris</label>
+            <br>
+            <label><input type="radio" name="trainer"> Jake Thompson</label>
+            <br>
+            <label><input type="radio" name="trainer"> William Davis</label>
+            <br>
+            <br>
+
+            <input type="submit" value="Search">
+        </form>
+    <hr>
+
+    <!-- Embedded youtube video, bettergain's training video/tip of the day-->
+    <h2>Training Video of the Day:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yFQshytandQ" allowfullscreen></iframe>
+
+
+</body>
+</html>
