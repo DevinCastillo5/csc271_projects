@@ -39,7 +39,7 @@ p {
 
 /* class to style buttons */
 .buttons {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(223, 52, 52);
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
@@ -63,12 +63,6 @@ a:visited {
     color: rgb(85, 26, 139);
 }
 
-a:hover {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-}
-
-/* header class with all of the link changes*/
 .header {
     overflow: visible;
     background-color: rgb(139, 226, 255);
@@ -89,7 +83,7 @@ a:hover {
 }
 
 .header a:active {
-    background-color:cadetblue;
+    background-color:rgb(202, 242, 255);
 }
 
 .content {
@@ -103,8 +97,20 @@ a:hover {
     border-radius: 10px;
 }
 
-/* floating img to place text to the right of img*/
 #current_trainer_img {
     float:left;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 18px;
+  }
 }
