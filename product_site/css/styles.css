@@ -67,3 +67,58 @@ a:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
+
+/* header class with all of the link changes*/
+.header {
+    overflow: visible;
+    background-color: rgb(139, 226, 255);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.header a {
+    color: rgb(15, 87, 125);
+    float: left;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.header a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.header a:active {
+    background-color:cadetblue;
+}
+
+.content {
+    width: 90%;
+    float: left;
+    margin: 20px 5%;
+    padding: 20px;
+    border: 2px solid rgb(15, 87, 125);
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* floating img to place text to the right of img*/
+#current_trainer_img {
+    float:left;
+    margin-right: 10px;
+}
+
+/*responsive web design, for small screens*/
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 18px;
+  }
+}
