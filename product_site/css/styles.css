@@ -108,17 +108,3 @@ a:hover {
     float:left;
     margin-right: 10px;
 }
-
-/*responsive web design, for small screens*/
-@media screen and (max-width: 600px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .content {
-    width: 100%;
-    font-size: 18px;
-  }
-}
