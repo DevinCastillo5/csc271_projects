@@ -1,0 +1,116 @@
+/* 
+Name: Devin Castillo
+Date: 10/11/2026
+Description: This is the css file for my website which
+holds the general styles for all the pages.
+*/
+
+
+body {
+	background-color: rgb(202, 242, 255);
+}
+
+hr {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px 0;
+}
+
+/* used to make the images look better especially on the trainer search page */
+img {
+    border-radius: 13px;
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+/* changing main headings for every page */
+h1 {
+    font-size: 38px;
+    color: rgb(15, 87, 125);
+    text-decoration:wavy underline rgb(15, 87, 125);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Verdana;
+}
+
+p {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* class to style buttons */
+.buttons {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* id to make the links on homepage horizontal */
+#footer {
+    display: flex;
+}
+
+/* changing colors of link states */
+a:link {
+    color: rgb(0, 0, 238);
+}
+
+a:visited {
+    color: rgb(85, 26, 139);
+}
+
+.header {
+    overflow: visible;
+    background-color: rgb(139, 226, 255);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.header a {
+    color: rgb(15, 87, 125);
+    float: left;
+    padding-top: 8px;
+    padding-left: 25px;
+}
+
+.header a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.header a:active {
+    background-color:rgb(202, 242, 255);
+}
+
+.content {
+    width: 90%;
+    float: left;
+    margin: 20px 5%;
+    padding: 20px;
+    border: 2px solid rgb(15, 87, 125);
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#current_trainer_img {
+    float:left;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 18px;
+  }
+}

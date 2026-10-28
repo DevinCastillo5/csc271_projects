@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!--
+Name: Devin Castillo
+Date: 10/11/2026
+Description: The page where user will find all information about their current trainer.
+They can meet from this page and see all meal plans and workouts here.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BetterGains - Your Personal Trainer</title>
+    <meta name="description" content="Meet your personal trainer, explore their fitness specialties,
+    and view your meal plan and workout routine to support your health and strength goals.">
+    <meta property="og:title" content="BetterGains - Your Personal Trainer">
+    <meta property="og:description" content="Meet your personal trainer, explore their fitness specialties, and view your meal plan and workout routine to support your health and strength goals.">
+    <meta property="og:image" content="https://devincastillo.rhody.dev/csc271_projects/product_site/images/bettergains_logo.png">
+    <meta property="og:url" content="https://devincastillo.rhody.dev/csc271_projects/product_site/current_trainer.html">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3NDQKDMDP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z3NDQKDMDP');
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="images/bettergains_logo.png" alt="BetterGains Logo" height="40">
+        <h1>Your Trainer</h1>
+        <a href="home.html">Home</a>
+        <a href="trainer_search.html">Trainer Search</a>
+        <a href="current_trainer.html">Your Trainer</a>
+    </div>
+    <hr>
+    <div class="content">
+        <!-- Main Content -->
+        <h2>Trainer Information</h2>
+            <p>Here you can find information about your current personal trainer, including their contact details and specialties. 
+                Finding a personal trainer will help you accomplish your gym and fitness goals.
+            </p>
+        <hr>
+
+        <!-- Meeting section-->
+        <h3><strong>Next Online Meeting:</strong> Thursday, October 29th at 4:00 PM</h3>
+            <button type="button" class="buttons">Message Trainer</button>
+            <button type="button" class="buttons">Join Meeting Now</button>
+        <hr>
+
+        <!-- Trainer Details Section -->
+        <h3>Trainer Details</h3>
+            <img src="images/trainer2.jpg" alt="Trainer 2" height="200" id="current_trainer_img">
+            <p><strong>Name:</strong> Michael Harris</p>
+            <p><strong>Specialty:</strong> Hypertrophy</p>
+            <p><strong>Location:</strong> Columbus, OH</p>
+            <p><strong>Price:</strong> $40/hour</p>
+        <hr>
+
+        <!-- Meal Plan for the day -->
+        <h3>Today's Meal Plan (Your Diet):</h3>
+            <p><strong>Breakfast:</strong> Oatmeal with berries and almonds, 2 eggs + 2 egg whites</p>
+            <p><strong>Lunch:</strong> Grilled chicken breast, rice, and steamed vegetables</p>
+            <p><strong>Dinner:</strong> Low Calorie Steak Street Tacos</p>
+        <hr>
+
+        <!-- Daily workout-->
+        <h3>Today's Workout Routine: Back & Biceps (Pull Day)</h3>
+            <p><strong>Warm-Up:</strong> 5-10 minutes of light cardio</p>
+            <p><strong>Workout:</strong></p>
+            <ul>
+                <li>Pull-Ups: 3 sets of 8-12 reps</li>
+                <li>Bent Over Rows: 3 sets of 10-12 reps</li>
+                <li>Lat Pulldowns (Close Grip): 3 sets of 10-12 reps</li>
+                <li>Barbell Curls: 3 sets of 10-12 reps</li>
+                <li>Hammer Curls: 3 sets of 10-12 reps</li>
+            </ul>
+    </div>
+</body>
+</html>
