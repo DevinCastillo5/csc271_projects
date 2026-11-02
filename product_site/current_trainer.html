@@ -19,6 +19,7 @@ They can meet from this page and see all meal plans and workouts here.
     <meta property="og:url" content="https://devincastillo.rhody.dev/csc271_projects/product_site/current_trainer.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/totalPrice.js" defer></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3NDQKDMDP"></script>
@@ -59,10 +60,25 @@ They can meet from this page and see all meal plans and workouts here.
         <!-- Trainer Details Section -->
         <h3>Trainer Details</h3>
             <img src="images/trainer2.jpg" alt="Trainer 2" height="200" id="current_trainer_img">
-            <p><strong>Name:</strong> Michael Harris</p>
+            <!-- using span to help with the dynamic calculations and ids/classes-->
+            <p><strong>Name:</strong> <span class="trainer-name"></span>Michael Harris</span></p>
             <p><strong>Specialty:</strong> Hypertrophy</p>
             <p><strong>Location:</strong> Columbus, OH</p>
-            <p><strong>Price:</strong> $40/hour</p>
+            <p><strong>Price:</strong> <span class="trainer-hourly-price" data-hourly-rate="40"></span>$40/hour</span></p>
+        <hr>
+
+        <!-- Monthly trainer cost calculator -->
+        <h3>Estimate Your Monthly Trainer Cost</h3>
+        <form id="trainer-cost-calculator">
+            <label for="hours-per-session">Hours per session:</label>
+            <input type="number" id="hours-per-session" value="1" required>
+            <br>
+            <br>
+            <label for="sessions-per-month">Sessions per month:</label>
+            <input type="number" id="sessions-per-month" value="4" required>
+        </form>
+        <p>Estimated monthly total: <strong id="monthly-total" aria-live="polite">$160.00</strong></p>
+        <p id="calculation-summary">Enter your session schedule to see the estimate.</p>
         <hr>
 
         <!-- Meal Plan for the day -->
