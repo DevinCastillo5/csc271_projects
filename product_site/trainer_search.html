@@ -19,6 +19,7 @@ search for different trainers on the site.
     <meta property="og:url" content="https://devincastillo.rhody.dev/csc271_projects/product_site/trainer_search.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/trainer_reccomender.js" defer></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3NDQKDMDP"></script>
@@ -52,30 +53,34 @@ search for different trainers on the site.
             <table>
                 <tbody>
                     <tr>
-                        <td>
+                        <td class="trainer-card" data-trainer="Jessica Wilson">
                             <img src="images/trainer1.jpg" alt="Jessica Wilson Picture" height="200">
                             <h3>Jessica Wilson</h3>
+                            <p class="trainer-card-status"></p>
                             <p>Specialty: Strength Training</p>
                             <p>Location: New York, NY</p>
                             <p>Price: $50/hour</p>
                         </td>
-                        <td>
+                        <td class="trainer-card" data-trainer="Michael Harris">
                             <img src="images/trainer2.jpg" alt="Michael Harris Picture" height="200">
                             <h3>Michael Harris</h3>
+                            <p class="trainer-card-status"></p>
                             <p>Specialty: Hypertrophy</p>
                             <p>Location: Columbus, OH</p>
                             <p>Price: $40/hour</p>
                         </td>
-                        <td>
+                        <td class="trainer-card" data-trainer="Jake Thompson">
                             <img src="images/trainer3.jpg" alt="Jake Thompson Picture" height="200">
                             <h3>Jake Thompson</h3>
+                            <p class="trainer-card-status"></p>
                             <p>Specialty: Mobility</p>
                             <p>Location: Chicago, IL</p>
                             <p>Price: $45/hour</p>
                         </td>
-                        <td>
+                        <td class="trainer-card" data-trainer="William Davis">
                             <img src="images/trainer4.jpg" alt="William Davis Picture" height="200">
                             <h3>William Davis</h3>
+                            <p class="trainer-card-status"></p>
                             <p>Specialty: Nutrition</p>
                             <p>Location: Boston, MA</p>
                             <p>Price: $60/hour</p>
@@ -83,6 +88,25 @@ search for different trainers on the site.
                     </tr>
                 </tbody>
             </table>
+        <hr>
+        <h2 id="recommendation-heading">Find Your Recommended Trainer</h2>
+            <p>Choose your main fitness goal and hourly budget to get a trainer recommendation.</p>
+            <label for="fitness-goal">Fitness goal:</label>
+            <select id="fitness-goal">
+                <option value="strength">Build strength</option>
+                <option value="hypertrophy">Build muscle</option>
+                <option value="mobility">Improve mobility</option>
+                <option value="nutrition">Get nutrition coaching</option>
+            </select>
+            <br>
+            <br>
+            <label for="hourly-budget">Maximum hourly budget ($):</label>
+            <input type="number" id="hourly-budget" min="0" step="5" value="50">
+
+            <h3 id="recommendation-result"></h3>
+            <p id="recommendation-reason"></p>
+            <h3>Trainers within your budget</h3>
+            <ul id="affordable-trainers"></ul>
         <hr>
 
         <!-- user chooses a trainer in a form, uses text and radio buttons -->
