@@ -96,6 +96,17 @@ a:visited {
     box-sizing: border-box;
     border-radius: 10px;
 }
+.trainer-card.recommended-trainer {
+    outline: 3px solid rgb(15, 87, 125);
+    background-color: rgb(235, 250, 255);
+    border-radius: 15px;
+}
+
+.trainer-card-status {
+    min-height: 18px;
+    color: rgb(15, 87, 125);
+    font-weight: bold;
+}
 
 #current_trainer_img {
     float:left;
