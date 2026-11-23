@@ -20,6 +20,7 @@ search for different trainers on the site.
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/trainer_reccomender.js" defer></script>
+    <script src="js/trainer_expandInfo.js" defer></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3NDQKDMDP"></script>
@@ -63,6 +64,8 @@ search for different trainers on the site.
                             <p>Specialty: Strength Training</p>
                             <p>Location: New York, NY</p>
                             <p>Price: $50/hour</p>
+                            <button type="button" class="buttons trainer-info-toggle" aria-expanded="false" aria-controls="trainer-details-jessica">Read More</button>
+                            <div class="trainer-details" id="trainer-details-jessica" hidden></div>
                         </td>
                         <td class="trainer-card" data-trainer="Michael Harris">
                             <img src="images/trainer2.jpg" alt="Michael Harris Picture" height="200">
@@ -71,6 +74,8 @@ search for different trainers on the site.
                             <p>Specialty: Hypertrophy</p>
                             <p>Location: Columbus, OH</p>
                             <p>Price: $40/hour</p>
+                            <button type="button" class="buttons trainer-info-toggle" aria-expanded="false" aria-controls="trainer-details-michael">Read More</button>
+                            <div class="trainer-details" id="trainer-details-michael" hidden></div>
                         </td>
                         <td class="trainer-card" data-trainer="Jake Thompson">
                             <img src="images/trainer3.jpg" alt="Jake Thompson Picture" height="200">
@@ -79,6 +84,8 @@ search for different trainers on the site.
                             <p>Specialty: Mobility</p>
                             <p>Location: Chicago, IL</p>
                             <p>Price: $45/hour</p>
+                            <button type="button" class="buttons trainer-info-toggle" aria-expanded="false" aria-controls="trainer-details-jake">Read More</button>
+                            <div class="trainer-details" id="trainer-details-jake" hidden></div>
                         </td>
                         <td class="trainer-card" data-trainer="William Davis">
                             <img src="images/trainer4.jpg" alt="William Davis Picture" height="200">
@@ -87,6 +94,8 @@ search for different trainers on the site.
                             <p>Specialty: Nutrition</p>
                             <p>Location: Boston, MA</p>
                             <p>Price: $60/hour</p>
+                            <button type="button" class="buttons trainer-info-toggle" aria-expanded="false" aria-controls="trainer-details-william">Read More</button>
+                            <div class="trainer-details" id="trainer-details-william" hidden></div>
                         </td>
                     </tr>
                 </tbody>
@@ -114,15 +123,17 @@ search for different trainers on the site.
 
         <!-- user chooses a trainer in a form, uses text and radio buttons -->
         <h2>Choose Trainer:</h2>
-            <form action="home.html">
+            <form id="trainer-selection-form" action="home.html" novalidate>
                 <label for="user_name">Your Name:</label>
-                <input type="text" id="user_name" name="user_name" required>
+                <input type="text" id="user_name" name="user_name" required minlength="2" aria-describedby="user-name-feedback">
+                <span class="input-feedback" id="user-name-feedback" aria-live="polite"></span>
                 <br>
                 <br>
 
                 <!-- User enters their goal so the personal trainer can know what they want to learn -->
                 <label for="goal">Your Goal:</label>
-                <input type="text" id="goal" name="goal" required>
+                <input type="text" id="goal" name="goal" required minlength="2" aria-describedby="goal-feedback">
+                <span class="input-feedback" id="goal-feedback" aria-live="polite"></span>
                 <br>
                 <br>
 
@@ -140,6 +151,7 @@ search for different trainers on the site.
                 <br>
 
                 <input type="submit" value="Search" class="buttons">
+                <p id="trainer-form-status" role="status" aria-live="polite"></p>
             </form>
         <hr>
 
