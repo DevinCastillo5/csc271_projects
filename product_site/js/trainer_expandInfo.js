@@ -18,7 +18,7 @@ const trainerDetails = {
         specialties: ["Hypertrophy", "Resistance training", "Workout planning"],
         reviews: [
             { username: "Offical_SamSulek", review: "My workouts have a clear plan and I feel stronger every month.", rating: 5 },
-            { username: "DuttReactss", review: "Helpful feedback and a solid plan for building muscle.", rating: 4 }
+            { username: "FlightReacts", review: "Helpful feedback and a solid plan for building muscle.", rating: 4 }
         ]
     },
     "Jake Thompson": {
