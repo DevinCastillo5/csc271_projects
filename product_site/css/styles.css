@@ -102,10 +102,50 @@ a:visited {
     border-radius: 15px;
 }
 
+.trainer-card {
+    vertical-align: top;
+}
+
 .trainer-card-status {
     min-height: 18px;
     color: rgb(15, 87, 125);
     font-weight: bold;
+}
+
+.trainer-info-toggle {
+    margin-bottom: 10px;
+}
+
+.trainer-details {
+    padding: 10px;
+    border: 1px solid rgb(15, 87, 125);
+    border-radius: 8px;
+    background-color: rgb(235, 250, 255);
+}
+
+.trainer-details h4 {
+    margin-bottom: 5px;
+    color: rgb(15, 87, 125);
+}
+
+.trainer-details ul {
+    padding-left: 20px;
+}
+
+.trainer-details li {
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-feedback {
+    display: block;
+    color: rgb(15, 87, 125);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+input[aria-invalid="true"] {
+    border: 2px solid rgb(170, 0, 0);
 }
 
 #current_trainer_img {
